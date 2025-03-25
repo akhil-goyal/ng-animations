@@ -1,1 +1,8 @@
-<p>slide-bounce-card works!</p>
+<button (click)="toggleCard()" class="toggle-btn">
+  {{ isVisible ? "Hide Card" : "Show Card" }}
+</button>
+
+<div [@slideBounce]="isVisible ? 'visible' : 'hidden'" class="card">
+  <h2>Angular 19 Card</h2>
+  <p>This card slides in with a fun bounce effect!</p>
+</div>
