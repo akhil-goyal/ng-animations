@@ -1,0 +1,21 @@
+<div class="fractal-container">
+  <div class="beam-container">
+    <div class="beam beam-1"></div>
+    <div class="beam beam-2"></div>
+    <div class="beam beam-3"></div>
+    <div class="beam beam-4"></div>
+    <div class="beam beam-5"></div>
+    <div class="beam beam-6"></div>
+  </div>
+  <div class="particle-container">
+    <div
+      *ngFor="let particle of particles"
+      [@particleDrift]
+      class="particle"
+      [style.--x-end]="particle.xEnd"
+      [style.--y-end]="particle.yEnd"
+      [style.--color]="particle.color"
+    ></div>
+  </div>
+  <h1 [@textBloom] [@prismGlow] class="fractal-text">Fractal Bloom</h1>
+</div>

@@ -1,0 +1,101 @@
+.fractal-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000; /* Black base */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beam-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+}
+
+.beam {
+  position: absolute;
+  width: 2px;
+  height: 400px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+  animation: beamBloom 6s infinite ease-in-out;
+  transform-origin: top center;
+  mix-blend-mode: screen;
+}
+
+.beam-1 {
+  transform: rotate(0deg);
+}
+.beam-2 {
+  transform: rotate(60deg);
+  animation-delay: -1s;
+}
+.beam-3 {
+  transform: rotate(120deg);
+  animation-delay: -2s;
+}
+.beam-4 {
+  transform: rotate(180deg);
+  animation-delay: -3s;
+}
+.beam-5 {
+  transform: rotate(240deg);
+  animation-delay: -4s;
+}
+.beam-6 {
+  transform: rotate(300deg);
+  animation-delay: -5s;
+}
+
+@keyframes beamBloom {
+  0% {
+    height: 200px;
+    opacity: 0.5;
+  }
+  50% {
+    height: 400px;
+    opacity: 1;
+  }
+  100% {
+    height: 200px;
+    opacity: 0.5;
+  }
+}
+
+.particle-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--color);
+  top: 0;
+  left: 0;
+}
+
+.fractal-text {
+  color: white;
+  font-size: 4rem;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  z-index: 1;
+}

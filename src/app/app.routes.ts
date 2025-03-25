@@ -9,6 +9,7 @@ import { VortexRevealComponent } from './components/vortex-reveal/vortex-reveal.
 import { AuroraFlowComponent } from './components/aurora-flow/aurora-flow.component';
 import { LiquidCrystalComponent } from './components/liquid-crystal/liquid-crystal.component';
 import { NebulaSwirlComponent } from './components/nebula-swirl/nebula-swirl.component';
+import { FractalBloomComponent } from './components/fractal-bloom/fractal-bloom.component';
 
 export const routes: Routes = [
   {
@@ -50,5 +51,9 @@ export const routes: Routes = [
   {
     path: 'nebula',
     component: NebulaSwirlComponent,
+  },
+  {
+    path: 'bloom',
+    component: FractalBloomComponent,
   },
 ];
