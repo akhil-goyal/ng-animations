@@ -6,6 +6,7 @@ import { StaggeredListComponent } from './components/staggered-list/staggered-li
 import { ConfettiBurstComponent } from './components/confetti-burst/confetti-burst.component';
 import { OrbitalParticlesComponent } from './components/orbital-particles/orbital-particles.component';
 import { VortexRevealComponent } from './components/vortex-reveal/vortex-reveal.component';
+import { AuroraFlowComponent } from './components/aurora-flow/aurora-flow.component';
 
 export const routes: Routes = [
   {
@@ -35,5 +36,9 @@ export const routes: Routes = [
   {
     path: 'vortex',
     component: VortexRevealComponent,
+  },
+  {
+    path: 'aurora',
+    component: AuroraFlowComponent,
   },
 ];

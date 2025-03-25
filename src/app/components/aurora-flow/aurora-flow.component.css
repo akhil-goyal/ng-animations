@@ -1,0 +1,70 @@
+.aurora-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0a23; /* Dark base for contrast */
+}
+
+.aurora-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  mix-blend-mode: screen; /* Blends colors for aurora effect */
+  animation: auroraWave 10s infinite ease-in-out;
+}
+
+.layer-1 {
+  background: linear-gradient(45deg, #00ffcc, #ff00cc, #00ccff);
+  background-size: 200% 200%;
+}
+
+.layer-2 {
+  background: linear-gradient(135deg, #ffcc00, #00ff99, #9900ff);
+  background-size: 200% 200%;
+  animation-delay: -2s; /* Staggered start */
+}
+
+.layer-3 {
+  background: linear-gradient(90deg, #ff6699, #66ff99, #9966ff);
+  background-size: 200% 200%;
+  animation-delay: -4s; /* Staggered start */
+}
+
+@keyframes auroraWave {
+  0% {
+    background-position: 0% 0%, 50% 50%, 100% 100%;
+  }
+  25% {
+    background-position: 100% 50%, 0% 100%, 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%, 100% 0%, 0% 50%;
+  }
+  75% {
+    background-position: 0% 50%, 50% 0%, 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%, 50% 50%, 100% 100%;
+  }
+}
+
+.image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 800px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.aurora-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

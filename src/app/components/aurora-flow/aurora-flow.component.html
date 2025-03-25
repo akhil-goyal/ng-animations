@@ -1,0 +1,15 @@
+<div class="aurora-container">
+  <div class="aurora-layer layer-1"></div>
+  <div class="aurora-layer layer-2"></div>
+  <div class="aurora-layer layer-3"></div>
+  <div class="image-container" [@glowPulse]>
+    <img
+      *ngIf="imageLoaded"
+      [@imageReveal]
+      src="https://images.unsplash.com/photo-1706556146696-a4eabcd0cdec?q=80&w=1887&auto=format&fit=crop"
+      alt="Aurora Scene"
+      (load)="onImageLoad()"
+      class="aurora-image"
+    />
+  </div>
+</div>
