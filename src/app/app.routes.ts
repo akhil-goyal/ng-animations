@@ -4,6 +4,7 @@ import { SlideBounceCardComponent } from './components/slide-bounce-card/slide-b
 import { FlipCardComponent } from './components/flip-card/flip-card.component';
 import { StaggeredListComponent } from './components/staggered-list/staggered-list.component';
 import { ConfettiBurstComponent } from './components/confetti-burst/confetti-burst.component';
+import { OrbitalParticlesComponent } from './components/orbital-particles/orbital-particles.component';
 
 export const routes: Routes = [
   {
@@ -25,5 +26,9 @@ export const routes: Routes = [
   {
     path: 'confetti',
     component: ConfettiBurstComponent,
+  },
+  {
+    path: 'orbital',
+    component: OrbitalParticlesComponent,
   },
 ];

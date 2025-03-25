@@ -1,0 +1,13 @@
+<div class="button-container">
+    <button #buttonRef (click)="triggerParticles()" class="orbit-btn">
+      Spark Magic!
+    </button>
+    <div class="particle-container">
+      <div *ngFor="let particle of particles" 
+           [@orbitalGlow]
+           class="particle"
+           [style.--radius]="particle.radius"
+           [style.--color]="particle.color">
+      </div>
+    </div>
+  </div>
