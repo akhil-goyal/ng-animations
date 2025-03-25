@@ -1,7 +1,7 @@
 .pulse-button {
   padding: 15px 30px;
   font-size: 18px;
-  background-color: #00d4ff;
+  background-color: #d400ff;
   color: white;
   border: none;
   border-radius: 8px;
@@ -10,5 +10,5 @@
 }
 
 .pulse-button:hover {
-  background-color: #00b0cc;
+  background-color: #b700dc;
 }
