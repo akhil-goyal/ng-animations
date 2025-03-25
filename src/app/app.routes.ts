@@ -7,6 +7,7 @@ import { ConfettiBurstComponent } from './components/confetti-burst/confetti-bur
 import { OrbitalParticlesComponent } from './components/orbital-particles/orbital-particles.component';
 import { VortexRevealComponent } from './components/vortex-reveal/vortex-reveal.component';
 import { AuroraFlowComponent } from './components/aurora-flow/aurora-flow.component';
+import { LiquidCrystalComponent } from './components/liquid-crystal/liquid-crystal.component';
 
 export const routes: Routes = [
   {
@@ -40,5 +41,9 @@ export const routes: Routes = [
   {
     path: 'aurora',
     component: AuroraFlowComponent,
+  },
+  {
+    path: 'liquid',
+    component: LiquidCrystalComponent,
   },
 ];
