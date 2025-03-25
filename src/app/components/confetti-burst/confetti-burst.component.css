@@ -1,0 +1,41 @@
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.confetti-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #ffeb3b; /* Yellow */
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1; /* Ensure button stays clickable */
+}
+
+.confetti-btn:hover {
+  background-color: #fdd835;
+}
+
+.confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevents interference with button */
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  transform-origin: center;
+  top: 50%; /* Start at button center */
+  left: 50%;
+}

@@ -1,1 +1,16 @@
-<p>confetti-burst works!</p>
+<div class="button-container">
+  <button #buttonRef (click)="triggerConfetti()" class="confetti-btn">
+    Celebrate!
+  </button>
+  <div class="confetti-container">
+    <div
+      *ngFor="let piece of confettiPieces"
+      [@confettiBurst]
+      class="confetti-piece"
+      [style.--x]="piece.x"
+      [style.--y]="piece.y"
+      [style.--rotate]="piece.rotate"
+      [style.backgroundColor]="piece.color"
+    ></div>
+  </div>
+</div>
