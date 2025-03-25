@@ -3,6 +3,7 @@ import { PulseGlowButtonComponent } from './components/pulse-glow-button/pulse-g
 import { SlideBounceCardComponent } from './components/slide-bounce-card/slide-bounce-card.component';
 import { FlipCardComponent } from './components/flip-card/flip-card.component';
 import { StaggeredListComponent } from './components/staggered-list/staggered-list.component';
+import { ConfettiBurstComponent } from './components/confetti-burst/confetti-burst.component';
 
 export const routes: Routes = [
   {
@@ -20,5 +21,9 @@ export const routes: Routes = [
   {
     path: 'list',
     component: StaggeredListComponent,
+  },
+  {
+    path: 'confetti',
+    component: ConfettiBurstComponent,
   },
 ];
