@@ -1,0 +1,16 @@
+<div class="nebula-container">
+  <div class="nebula-layer layer-1"></div>
+  <div class="nebula-layer layer-2"></div>
+  <div class="nebula-layer layer-3"></div>
+  <div class="particle-container">
+    <div
+      *ngFor="let particle of particles"
+      [@particleSwirl]
+      class="particle"
+      [style.--x-start]="particle.xStart"
+      [style.--y-start]="particle.yStart"
+      [style.--color]="particle.color"
+    ></div>
+  </div>
+  <h1 [@textGlow] [@glowPulse] class="nebula-text">Galactic Nebula</h1>
+</div>

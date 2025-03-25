@@ -8,6 +8,7 @@ import { OrbitalParticlesComponent } from './components/orbital-particles/orbita
 import { VortexRevealComponent } from './components/vortex-reveal/vortex-reveal.component';
 import { AuroraFlowComponent } from './components/aurora-flow/aurora-flow.component';
 import { LiquidCrystalComponent } from './components/liquid-crystal/liquid-crystal.component';
+import { NebulaSwirlComponent } from './components/nebula-swirl/nebula-swirl.component';
 
 export const routes: Routes = [
   {
@@ -45,5 +46,9 @@ export const routes: Routes = [
   {
     path: 'liquid',
     component: LiquidCrystalComponent,
+  },
+  {
+    path: 'nebula',
+    component: NebulaSwirlComponent,
   },
 ];
