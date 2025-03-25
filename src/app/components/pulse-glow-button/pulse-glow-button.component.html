@@ -1,1 +1,7 @@
-<p>pulse-glow-button works!</p>
+<button
+  [@pulseGlow]="isActive ? 'active' : 'inactive'"
+  (click)="togglePulse()"
+  class="pulse-button"
+>
+  Click Me!
+</button>
