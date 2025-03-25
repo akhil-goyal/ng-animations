@@ -1,1 +1,10 @@
-<p>staggered-list works!</p>
+<div class="controls">
+  <button (click)="addItem()">Add Item</button>
+  <button (click)="removeItem()">Remove Item</button>
+</div>
+
+<ul [@listAnimation]="items.length">
+  <li *ngFor="let item of items" class="list-item">
+    {{ item }}
+  </li>
+</ul>
