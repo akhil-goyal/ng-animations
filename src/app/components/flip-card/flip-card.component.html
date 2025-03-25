@@ -1,1 +1,14 @@
-<p>flip-card works!</p>
+<div
+  class="card-container"
+  (click)="flipCard()"
+  [@flipCard]="isFlipped ? 'back' : 'front'"
+>
+  <div class="card-face front">
+    <h2>Front Side</h2>
+    <p>Click me to flip!</p>
+  </div>
+  <div class="card-face back">
+    <h2>Back Side</h2>
+    <p>Surprise! Here’s the reveal.</p>
+  </div>
+</div>
