@@ -5,6 +5,7 @@ import { FlipCardComponent } from './components/flip-card/flip-card.component';
 import { StaggeredListComponent } from './components/staggered-list/staggered-list.component';
 import { ConfettiBurstComponent } from './components/confetti-burst/confetti-burst.component';
 import { OrbitalParticlesComponent } from './components/orbital-particles/orbital-particles.component';
+import { VortexRevealComponent } from './components/vortex-reveal/vortex-reveal.component';
 
 export const routes: Routes = [
   {
@@ -30,5 +31,9 @@ export const routes: Routes = [
   {
     path: 'orbital',
     component: OrbitalParticlesComponent,
+  },
+  {
+    path: 'vortex',
+    component: VortexRevealComponent,
   },
 ];

@@ -1,0 +1,16 @@
+<div class="button-container">
+  <button #buttonRef (click)="triggerVortex()" class="vortex-btn">
+    <span *ngIf="!isRevealed">Reveal</span>
+    <span *ngIf="isRevealed" [@revealGlow] class="revealed-text">Magic!</span>
+  </button>
+  <div class="particle-container">
+    <div
+      *ngFor="let particle of particles"
+      [@vortexSwirl]
+      class="particle"
+      [style.--x-start]="particle.xStart"
+      [style.--y-start]="particle.yStart"
+      [style.--color]="particle.color"
+    ></div>
+  </div>
+</div>
